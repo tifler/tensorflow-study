@@ -54,5 +54,5 @@ with tf.Session() as sess:
     plt.show()
 
     h, p, a = sess.run([hypothesis, predicted, accuracy], feed_dict={X: x_data, Y: y_data})
-    print ("Hypothesis:", h, "Predicted:", p, "Accuracy:", a)        
+    print ("\nPredicted:", p, "\nY:", y_data, "\nAccuracy:", a)        
         
